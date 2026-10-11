@@ -6,7 +6,7 @@ on:
       - "libs/cua-driver/rust/**"
       - ".github/workflows/ci-rust-format.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/rust/**"
       - ".github/workflows/ci-rust-format.yml"

@@ -11,7 +11,7 @@ on:
       - "libs/cua/rust-toolchain.toml"
       - ".github/workflows/ci-cua-proto.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua/proto/**"
       - "libs/cua/crates/cua-proto/**"

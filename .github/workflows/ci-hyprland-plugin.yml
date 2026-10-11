@@ -6,7 +6,7 @@ on:
       - "libs/cua-driver/hyprland-plugin/**"
       - ".github/workflows/ci-hyprland-plugin.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/hyprland-plugin/**"
       - ".github/workflows/ci-hyprland-plugin.yml"

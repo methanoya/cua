@@ -17,7 +17,7 @@ on:
       - "scripts/ci/macos/test-swift-linker-symbols.sh"
       - ".github/workflows/ci-swift-linker.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/rust/.cargo/**"
       - "libs/cua-driver/rust/Cargo.toml"

@@ -19,7 +19,7 @@ on:
       - "libs/cua-driver/rust/crates/cua-driver-e2e/**"
       - ".github/workflows/ci-rust-macos.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/rust/.cargo/**"
       - "libs/cua-driver/rust/Cargo.toml"
@@ -57,7 +57,7 @@ jobs:
         with:
           workspaces: "libs/cua-driver/rust -> target"
           shared-key: macos-unit
-          save-if: ${{ github.ref == 'refs/heads/main' }}
+          save-if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/mymain' }}
       # Run each crate's whole inline suite so new test modules cannot be
       # silently left out by a hand-maintained filter list. Tests that need a
       # logged-in, TCC-authorized desktop are #[ignore] and belong to the Lume

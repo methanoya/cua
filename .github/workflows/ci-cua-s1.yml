@@ -2,7 +2,7 @@ name: "CI: cua-s1"
 
 on:
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-s1/**"
       - ".github/workflows/ci-cua-s1.yml"

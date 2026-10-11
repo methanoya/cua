@@ -20,7 +20,7 @@ on:
       - ".github/workflows/authorized-live-jev-use-demo.yml"
       - "scripts/ci/windows/run-jev-use-elevated-autostart.ps1"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/examples/jev-use/**"
       - "libs/cua-driver/tests/fixtures/apps/macos/appkit/**"

@@ -38,7 +38,7 @@ on:
       - ".github/workflows/ci-distro-compat-cua-driver.yml"
   push:
     # Main-branch pushes run only when the matrix itself changes.
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - ".github/workflows/ci-distro-compat-cua-driver.yml"
   release:

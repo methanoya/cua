@@ -8,7 +8,7 @@ on:
       - "scripts/ci/linux/test_run_valgrind_e2e.py"
       - ".github/workflows/ci-cua-driver-valgrind.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/rust/**"
       - "scripts/ci/linux/run-valgrind-e2e.py"
@@ -44,7 +44,7 @@ jobs:
       - uses: Swatinem/rust-cache@9d47c6ad4b02e050fd481d890b2ea34778fd09d6 # v2
         with:
           workspaces: "libs/cua-driver/rust -> target"
-          save-if: ${{ github.ref == 'refs/heads/main' }}
+          save-if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/mymain' }}
       - name: Test Valgrind runner shutdown
         run: python3 -m unittest -v scripts/ci/linux/test_run_valgrind_e2e.py
       - name: Install Linux build and Memcheck dependencies

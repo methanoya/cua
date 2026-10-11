@@ -29,7 +29,7 @@ on:
       - "scripts/spdx-headers.py"
       - ".github/workflows/ci-spdx-headers.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/**/*.swift"
       - "libs/cua-driver/**/*.rs"

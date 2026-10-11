@@ -24,7 +24,7 @@ on:
       - "libs/cua-driver/tests/fixtures/shared/web/index.html"
       - ".github/workflows/ci-nix-linux.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "flake.nix"
       - "flake.lock"

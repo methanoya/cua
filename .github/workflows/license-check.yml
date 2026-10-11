@@ -15,7 +15,7 @@ on:
       - "scripts/check-license-direction.py"
       - ".github/workflows/license-check.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "**/Cargo.toml"
       - "**/package.json"

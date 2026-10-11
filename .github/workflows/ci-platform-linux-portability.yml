@@ -18,7 +18,7 @@ on:
       - "libs/cua-driver/rust/crates/platform-linux/**"
       - ".github/workflows/ci-platform-linux-portability.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-driver/rust/.cargo/**"
       - "libs/cua-driver/rust/Cargo.toml"
@@ -52,7 +52,7 @@ jobs:
         with:
           workspaces: "libs/cua-driver/rust -> target"
           key: platform-linux-off-linux
-          save-if: ${{ github.ref == 'refs/heads/main' }}
+          save-if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/mymain' }}
       - name: Test platform-linux off Linux
         working-directory: libs/cua-driver/rust
         run: cargo test --locked -p platform-linux --all-targets

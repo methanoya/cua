@@ -24,7 +24,7 @@ on:
       - "libs/images/windows-2022/volume-diagnostics.ps1"
       - ".github/workflows/ci-cua-spacesd.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "libs/cua-spacesd/**"
       - "libs/cua-driver/rust/**"

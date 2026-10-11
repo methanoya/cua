@@ -17,7 +17,7 @@ on:
       - ".github/actions/**"
       - ".github/actionlint.yaml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - ".github/workflows/**"
       - ".github/actions/**"

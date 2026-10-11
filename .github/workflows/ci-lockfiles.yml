@@ -21,7 +21,7 @@ on:
       - "scripts/ci/lockfile-drift-allowlist.txt"
       - ".github/workflows/ci-lockfiles.yml"
   push:
-    branches: [main]
+    branches: [main, mymain]
     paths:
       - "**/Cargo.toml"
       - "**/Cargo.lock"
